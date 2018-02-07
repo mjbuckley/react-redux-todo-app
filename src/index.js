@@ -7,7 +7,7 @@ import { createStore } from 'redux';
 // for now.
 import todoApp from './reducers';
 import './index.css';
-import App from './App';
+import App from './components/App.js';
 // import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
