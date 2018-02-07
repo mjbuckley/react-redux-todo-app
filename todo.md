@@ -6,6 +6,8 @@
 - Mover components to component folder?
 - How doest nextToDoId in src/actions/index.js persist? Is it somehow indirectly imported by the root index.js file? Even if it is, how would it last between sessions? I guess thats not really the point here, because there isn't any saving being done anyways?
 
+- Why ({ todos, onTodoClick }) and not just (todos, onTodoClick) in todolist.js (and same idea in other places)
+?
 
 ## Notes on deep copy and immutability
 
