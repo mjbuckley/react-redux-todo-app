@@ -7,11 +7,13 @@ import { createStore } from 'redux';
 // for now.
 import todoApp from './reducers';
 import './index.css';
-import App from './components/App.js';
+import App from './components/app.js';
 // import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
+
+let store = createStore(todoApp);
 
 ReactDOM.render(
   <Provider store={store}>

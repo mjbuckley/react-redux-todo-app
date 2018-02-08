@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from './footer.js';
 import AddTodo from '../containers/addtodo.js';
 import VisibleTodoList from '../containers/visibletodolist.js';
-// import '../css/App.css';
+// import '../css/app.css';
 
 const App = () => (
   <div>

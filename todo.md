@@ -8,6 +8,9 @@
 
 - Why ({ todos, onTodoClick }) and not just (todos, onTodoClick) in todolist.js (and same idea in other places)
 ?
+- Lowercase vs uppercase file names?
+- Note: In mapStateToProps and mapDispatchToProps the ownProps parameter is just the props that are passed t the component that connect is being used for.
+
 
 ## Notes on deep copy and immutability
 
