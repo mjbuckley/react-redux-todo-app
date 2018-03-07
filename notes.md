@@ -1,16 +1,9 @@
-# TODO
-
-
-- Change file name to notes? Make a real readme. Change readme to cra-readme.
-- Why ({ todos, onTodoClick }) and not just (todos, onTodoClick) in todolist.js (and same idea in other places)
-?
-- Lowercase vs uppercase file names?
-
 ## Notes
 
 ### Building a production version
 
 If this is ever going to be built and not just used locally, then remove the progressive web app/service worker stuff.
+
 
 ### On deep copy and immutability
 
