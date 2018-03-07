@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom'; // app only imports { render }, will keep this for now.
+import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 // Below syntax was unfamiliar to me (importing a directory rather than a file). It is shorthand for
