@@ -4,10 +4,10 @@ import AddTodo from '../containers/addtodo.js';
 import VisibleTodoList from '../containers/visibletodolist.js';
 // import '../css/app.css';
 
-const App = () => (
+const App = ({ match: { params} }) => (
   <div>
     <AddTodo />
-    <VisibleTodoList />
+    <VisibleTodoList filter={params.filter || 'SHOW_ALL'} />
     <Footer />
   </div>
 );
