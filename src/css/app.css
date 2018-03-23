@@ -1,1 +1,13 @@
-/* not currently being used */
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.app p {
+  font-size: 18px;
+  color: gray;
+}
+
+.app ul {
+  border: 1px solid black;
+}

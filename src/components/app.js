@@ -1,11 +1,13 @@
 import React from 'react';
 import Footer from './footer.js';
 import AddTodo from '../containers/addtodo.js';
+import Intro from './intro.js';
 import VisibleTodoList from '../containers/visibletodolist.js';
-// import '../css/app.css';
+import '../css/app.css';
 
 const App = ({ match: { params} }) => (
-  <div>
+  <div className="app">
+    <Intro />
     <AddTodo />
     <VisibleTodoList filter={params.filter || 'SHOW_ALL'} />
     <Footer />

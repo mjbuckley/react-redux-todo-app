@@ -1,3 +1,10 @@
+March 21 todos
+
+- I commented out a lot of the older stuff that was replaced. Fine to keep around, but move to bottom and explain what it is.
+- A few components/ etc. are no longer being used. Fine to keep around for reference but comment and explain why they are there.
+- State doesn't persist on refresh. I believe this is how the app was set up, but not positive. Also, what is the best way to make the state persit? I feel like I did that somewhere.
+
+
 ## Notes
 
 ### Building a production version
