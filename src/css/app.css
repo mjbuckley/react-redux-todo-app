@@ -14,7 +14,6 @@
 
 .app p {
   font-size: 18px;
-  /* color: gray; */
 }
 
 .app h1 {
@@ -33,19 +32,15 @@
 .todolist {
   margin-top: 30px;
   border: 2px solid #0074d9;
-  /* background-color: white; */
   padding-top: 35px;
-  /* padding-bottom: 50px; */
 }
 
 .todolist.notodos {
-  /* padding-bottom: 50px; */
   padding-bottom: 15px;
 }
 
 .todolist h2 {
   font-weight: 400;
-  /* margin-top: 1em; */
   margin-bottom: 40px;
   font-style: normal;
   color: black;
@@ -81,11 +76,6 @@ button {
   font-size: 20px;
 }
 
-.intro {
-  /* padding-top: 40px;
-  padding-bottom: 40px; */
-}
-
 .todo-input {
   margin-top: 30px;
   margin-bottom: 38px;
@@ -94,8 +84,6 @@ button {
 .footer {
   font-weight: 300;
 }
-
-
 
 a {
   text-decoration: none;
@@ -106,22 +94,14 @@ a:link {
 a:visited {
   color: #0074d9;
 }
-a:focus {
-
-}
 a:hover {
   text-decoration: underline;
-
 }
 a:active {
-  color: #0074d9;
-
+  color: #ff665d;
 }
-
 a.active-link {
   color: red;
-  /* text-decoration: underline; */
-  /* font-weight: 700; */
   font-weight: bold;
 }
 

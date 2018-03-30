@@ -1,14 +1,12 @@
-March 21 todos
+TODOS
 
-- All button always has same styling even when not active.
-
-- Change github repo name?
-- Build this and have on github pages and link to in readme (which should be updated).
-
-
-- I commented out a lot of the older stuff that was replaced. Fine to keep around, but move to bottom and explain what it is.
+- Very basic mobile styling (mostly padding).
+- Change name on site, in package.json, and on github?
+- Add link on site to github repo
+- Update readme. App is now more changed from tutorial.
+- Build this and have on github pages and link to in readme (remove PWA stuff first).
 - A few components/ etc. are no longer being used. Fine to keep around for reference but comment and explain why they are there.
-- State doesn't persist on refresh. I believe this is how the app was set up, but not positive. Also, what is the best way to make the state persit? I feel like I did that somewhere.
+- Let todos persist on refresh?
 
 
 ## Notes
