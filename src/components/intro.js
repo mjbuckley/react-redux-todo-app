@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Intro = () => (
-  <div>
+  <div className="intro">
     <h1>React Redux Todo App</h1>
-    <p>Type in a todo item and click the "Add Todo" button to add to the item to the todo list.  Click on a todo item to mark it as completed. Filter todo items by clicking on a filter at the bottom of the screen.</p>
+    <h2>A simple todo app built with React, Redux, and React Router</h2>
   </div>
 );
 

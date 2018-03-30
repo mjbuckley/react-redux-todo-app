@@ -6,7 +6,7 @@ let AddToDo = ({ dispatch }) => {
   let input;
 
   return (
-    <div>
+    <div className="todo-input">
       <form
         onSubmit={e => {
           e.preventDefault();

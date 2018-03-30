@@ -3,11 +3,128 @@
   margin: 0 auto;
 }
 
-.app p {
+.app ul {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.app li {
+  list-style-type: square;
   font-size: 18px;
-  color: gray;
 }
 
-.app ul {
-  border: 1px solid black;
+.app p {
+  font-size: 18px;
+  /* color: gray; */
+}
+
+.app h1 {
+  border-bottom: 2px solid #0074d9;
+  margin-bottom: 8px;
+  padding-bottom: 2px;
+}
+
+.app h2 {
+  margin-top: 8px;
+  font-weight: 300;
+  font-style: italic;
+  color: #595959;
+}
+
+.todolist {
+  margin-top: 30px;
+  border: 2px solid #0074d9;
+  /* background-color: white; */
+  padding-top: 35px;
+  /* padding-bottom: 50px; */
+}
+
+.todolist.notodos {
+  /* padding-bottom: 50px; */
+  padding-bottom: 15px;
+}
+
+.todolist h2 {
+  font-weight: 400;
+  /* margin-top: 1em; */
+  margin-bottom: 40px;
+  font-style: normal;
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.todolist p {
+  padding-left: 30px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+button, input {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+input {
+  width: 250px;
+  height: 36px;
+  border: 2px solid #0074d9;
+  font-size: 18px;
+}
+button {
+  margin-left: 10px;
+  height: 36px;
+  border: 2px solid #0074d9;
+  background-color: #0074d9;
+  color: white;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.intro {
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
+}
+
+.todo-input {
+  margin-top: 30px;
+  margin-bottom: 38px;
+}
+
+.footer {
+  font-weight: 300;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #0074d9;
+}
+a:visited {
+  color: #0074d9;
+}
+a:focus {
+
+}
+a:hover {
+  text-decoration: underline;
+
+}
+a:active {
+  color: #0074d9;
+
+}
+
+a.active-link {
+  color: red;
+  /* text-decoration: underline; */
+  /* font-weight: 700; */
+  font-weight: bold;
+}
+
+.todolist-list {
+  margin-bottom: 35px;
 }
