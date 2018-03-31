@@ -1,6 +1,8 @@
 .app {
   max-width: 960px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .app ul {
@@ -76,6 +78,7 @@ button {
   font-size: 20px;
 }
 
+
 .todo-input {
   margin-top: 30px;
   margin-bottom: 38px;
@@ -107,4 +110,18 @@ a.active-link {
 
 .todolist-list {
   margin-bottom: 35px;
+}
+
+@media (max-width: 410px) {
+  input {
+    width: 100%;
+  }
+  button {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .app ul {
+    padding-left: 30px;
+    padding-right: 15px;
+  }
 }
