@@ -112,6 +112,10 @@ a.active-link {
   margin-bottom: 35px;
 }
 
+.github {
+  font-weight: 300;
+}
+
 @media (max-width: 410px) {
   input {
     width: 100%;

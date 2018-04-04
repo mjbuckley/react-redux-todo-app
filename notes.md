@@ -1,7 +1,6 @@
 TODOS
 
-- Change name on site, in package.json, and on github?
-- Fix way I'm adding github link (probably use flexbox). Also add an actual adress to link to.
+- Change name on site, in package.json, in github link in footer, and on github?
 - Update readme. App is now more changed from tutorial.
 - Build this and have on github pages and link to in readme (remove PWA stuff first).
 - A few components/ etc. are no longer being used. Fine to keep around for reference but comment and explain why they are there.
