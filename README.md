@@ -1,6 +1,6 @@
-# Redux-Test
+# React Redux Todo App
 
-This is a simple todo list app built using React and Redux. It is largely the same as the todo app presented in the [Redux documentation](https://redux.js.org/basics), but it has a few very minor changes and some additional notes.
+This is a simple todo list app built using React, Redux, and React Router. It is an implementation of the todo app from the [Redux documentation](https://redux.js.org/basics) that has been expanded in several ways (List here). You can view the app in action here: (add link here).
 
 ## Useage
 

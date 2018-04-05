@@ -1,3 +1,5 @@
+// Note that this file is no longer being used, but it is being kept around for reference.
+
 import React from 'react';
 import PropTypes from 'prop-types';
 

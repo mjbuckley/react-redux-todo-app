@@ -3,16 +3,10 @@ TODOS
 - Change name on site, in package.json, in github link in footer, and on github?
 - Update readme. App is now more changed from tutorial.
 - Build this and have on github pages and link to in readme (remove PWA stuff first).
-- A few components/ etc. are no longer being used. Fine to keep around for reference but comment and explain why they are there.
 - Let todos persist on refresh?
 
 
 ## Notes
-
-### Building a production version
-
-If this is ever going to be built and not just used locally, then remove the progressive web app/service worker stuff.
-
 
 ### On deep copy and immutability
 
