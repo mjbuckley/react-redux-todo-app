@@ -18,7 +18,7 @@ const Footer = () => (
         SHOW COMPLETED
       </FilterLink>
     </p>
-    <p className="github"><a href="https://github.com/mjbuckley/redux-test">View app code on GitHub</a></p>
+    <p className="github"><a href="https://github.com/mjbuckley/react-redux-todo-app">View app code on GitHub</a></p>
   </div>
 );
 

@@ -1,9 +1,9 @@
 TODOS
 
-- Change name on site, in package.json, in github link in footer, and on github?
-- Update readme. App is now more changed from tutorial.
+- Let todos persist on refresh.
 - Build this and have on github pages and link to in readme (remove PWA stuff first).
-- Let todos persist on refresh?
+- Update readme. App is now more changed from tutorial. Include link to active site.
+- Should I move notes elsewhere and then delete this file?
 
 
 ## Notes
