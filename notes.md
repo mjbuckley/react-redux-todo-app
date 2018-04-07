@@ -1,12 +1,13 @@
 TODOS
 
-- Clean up index.js
 - What am I currently doing with state and visibility filters? I think it is being url is determining now. Does url then set state? Or is it not being used at all? Not sure.
 - Button to remove all todos and start over.
-- Build this and have on github pages and link to in readme (remove PWA stuff first).
+- Build this and have on github pages and link to in readme.
 - Update readme. App is now more changed from tutorial. Include link to active site.
 - Should I move notes elsewhere and then delete this file?
+- Add 404?
 
+Did: Clean up index.js,
 
 
 ## Notes
@@ -19,3 +20,16 @@ Here's how to think about what needs to be deep copied and what doesn't. Redux n
 ### ownProps
 
 In mapStateToProps and mapDispatchToProps the ownProps parameter is just the props that are passed to the container component. There is nothing required about this name, it is just used by the tutorial to verbally distinguish these props from the props for the component that the container component is in charge of.
+
+
+### Importing note
+
+The Redux docs frequently use an import syntax like
+```
+import todoApp from './reducers';
+```
+I was unfamiliar with this, but it is just a shorthand was of saying:
+```
+import todoApp from './reducers/index.js';
+```
+Not sure the value of not just being explicit about what you want, but I kept that syntax here.
