@@ -1,9 +1,12 @@
 TODOS
 
-- Let todos persist on refresh.
+- Clean up index.js
+- What am I currently doing with state and visibility filters? I think it is being url is determining now. Does url then set state? Or is it not being used at all? Not sure.
+- Button to remove all todos and start over.
 - Build this and have on github pages and link to in readme (remove PWA stuff first).
 - Update readme. App is now more changed from tutorial. Include link to active site.
 - Should I move notes elsewhere and then delete this file?
+
 
 
 ## Notes

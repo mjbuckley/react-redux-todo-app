@@ -38,11 +38,12 @@ const TodoList = ({ todos, filter, onTodoClick }) => {
   );
 }
 
-
+// Note that id prop type is set as string, which works, but the id is a uuid. Note sure if there
+// is a better prop type to use?
 TodoList.propTypes = {
   todos: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       completed: PropTypes.bool.isRequired,
       text: PropTypes.string.isRequired
     }).isRequired,

@@ -8,13 +8,26 @@ import todoApp from './reducers';
 import './index.css';
 // import App from './components/app.js';
 import Root from './components/root.js';
+import throttle from 'lodash/throttle';
+import { loadState, saveState } from './localstorage.js';
 
 // import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
 
-let store = createStore(todoApp);
+
+// Grab saved state from local storage. Returns undefined if not saved or err.
+const persistedState = loadState();
+
+// Second (optional) argument is the initial state
+let store = createStore(todoApp, persistedState);
+
+// Updage local storage on state change. Use of throttle ensures that saveState doesn't get
+// excessively called
+store.subscribe(throttle(() => {
+  saveState(store.getState());
+}, 1000));
 
 ReactDOM.render(
   <Root store={store} />,

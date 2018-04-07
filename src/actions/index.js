@@ -1,5 +1,4 @@
-let nextToDoId = 0;
-
+import { v4 } from 'uuid'; // UUID creator
 
 // I was unfamiliar with the method used below to add text to the returned object. What's happening
 // is that you can use a variable name (including function parameters) alone when creating object
@@ -10,7 +9,7 @@ let nextToDoId = 0;
 export const addToDo = text => {
   return {
     type: 'ADD_TODO',
-    id: nextToDoId++,
+    id: v4(),
     text
   }
 };
