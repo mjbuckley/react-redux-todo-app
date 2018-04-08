@@ -5,7 +5,7 @@ import Intro from './intro.js';
 import VisibleTodoList from '../containers/visibletodolist.js';
 import '../css/app.css';
 
-const App = ({ match: { params} }) => (
+const App = ({ match: { params } }) => (
   <div className="app">
     <Intro />
     <AddTodo />

@@ -1,13 +1,10 @@
 TODOS
 
-- What am I currently doing with state and visibility filters? I think it is being url is determining now. Does url then set state? Or is it not being used at all? Not sure.
 - Button to remove all todos and start over.
 - Build this and have on github pages and link to in readme.
 - Update readme. App is now more changed from tutorial. Include link to active site.
 - Should I move notes elsewhere and then delete this file?
 - Add 404?
-
-Did: Clean up index.js,
 
 
 ## Notes
@@ -20,6 +17,13 @@ Here's how to think about what needs to be deep copied and what doesn't. Redux n
 ### ownProps
 
 In mapStateToProps and mapDispatchToProps the ownProps parameter is just the props that are passed to the container component. There is nothing required about this name, it is just used by the tutorial to verbally distinguish these props from the props for the component that the container component is in charge of.
+
+
+### Unused components
+
+Before adding React Router, toggling the visibility filter changed the filter state. It now changes the url which is intercepted by the app and passed down as a filter prop. I could have removed the visibilityfilter reducer that creates the (currently unused) filter state, but I kept it around for reference. So, technically the filter still exists, it is just never accessed or updated.
+
+The link.js componet is another componet that is no longer used because of the changes from using React Router, but it is also kept for reference.
 
 
 ### Importing note
