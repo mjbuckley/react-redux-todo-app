@@ -19,6 +19,10 @@ There are a few hoops to jump through to get things working on GitHub Pages. The
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   ```
+- Pages are served from a different location when running locally ('/') vs. GitHub Pages ('/react-redux-todo-app'). Create React App has a PUBLIC_URL variable that returns the public url for the build but nothing when run locally. In JS it can be accessed with {process.env.PUBLIC_URL}. CRA uses this where appropriate for the things that it handles, but React Router needs to be clued in. Adding the following in root.js allows React Router to run properly in both environments:
+```
+<Router basename={process.env.PUBLIC_URL}>
+```
 - create 404.html in public directory. Add the 404 from https://github.com/rafrex/spa-github-pages/blob/gh-pages/404.html
 - Change segment count from 0 to 1 in 404.
 - Add to the head section of index.html the script section from https://github.com/rafrex/spa-github-pages/blob/gh-pages/index.html#L58
