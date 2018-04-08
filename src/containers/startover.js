@@ -14,7 +14,7 @@ let StartOver = ({ dispatch }) => {
         dispatch(clearAll());
       }}
     >
-      Clear All Todos
+      CLEAR ALL
     </a>
   );
 };
