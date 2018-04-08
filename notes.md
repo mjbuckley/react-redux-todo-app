@@ -1,12 +1,30 @@
-TODOS
-
-- Build this and have on github pages and link to in readme.
-- Update readme. App is now more changed from tutorial. Include link to active site.
-- Should I move notes elsewhere and then delete this file?
-- Add 404?
-
-
 ## Notes
+
+### Unused components
+
+Before adding React Router, toggling the visibility filter changed the filter state. It now changes the url which is intercepted by the app and passed down as a filter prop. I could have removed the visibilityfilter reducer that creates the (currently unused) filter state, but I kept it around for reference. So, technically the filter still exists, it is just never accessed or updated.
+
+The link.js componet is another component that is no longer used because of the changes from using React Router, but it is also kept for reference.
+
+
+### Deploying to GitHub Pages
+
+There are a few hoops to jump through to get things working on GitHub Pages. The Create React App user guide has good instructions, but recreating the gist here in case that every changes. The two main things are to make sure the build file gets deployed to the gh-pages branch on GitHub, and handling React Router usage on GitHub Pages. The steps are:
+
+- npm install gh-pages
+- To package.json add:
+  - "homepage": "https://mjbuckley.github.io/react-redux-todo-app",
+  - In scripts section add:
+  ```
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  ```
+- create 404.html in public directory. Add the 404 from https://github.com/rafrex/spa-github-pages/blob/gh-pages/404.html
+- Change segment count from 0 to 1 in 404.
+- Add to the head section of index.html the script section from https://github.com/rafrex/spa-github-pages/blob/gh-pages/index.html#L58
+- run npm deploy.
+- The first time a site is deployed login to GitHub and make sure the GitHub Pages option is pointed to the gh-pages branch.
+
 
 ### On deep copy and immutability
 
@@ -16,13 +34,6 @@ Here's how to think about what needs to be deep copied and what doesn't. Redux n
 ### ownProps
 
 In mapStateToProps and mapDispatchToProps the ownProps parameter is just the props that are passed to the container component. There is nothing required about this name, it is just used by the tutorial to verbally distinguish these props from the props for the component that the container component is in charge of.
-
-
-### Unused components
-
-Before adding React Router, toggling the visibility filter changed the filter state. It now changes the url which is intercepted by the app and passed down as a filter prop. I could have removed the visibilityfilter reducer that creates the (currently unused) filter state, but I kept it around for reference. So, technically the filter still exists, it is just never accessed or updated.
-
-The link.js componet is another componet that is no longer used because of the changes from using React Router, but it is also kept for reference.
 
 
 ### Importing note
