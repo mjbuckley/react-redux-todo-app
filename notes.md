@@ -1,6 +1,6 @@
 TODOS
 
-- Button to remove all todos and start over.
+- Decide where to place clear todos link and how to style.
 - Build this and have on github pages and link to in readme.
 - Update readme. App is now more changed from tutorial. Include link to active site.
 - Should I move notes elsewhere and then delete this file?
